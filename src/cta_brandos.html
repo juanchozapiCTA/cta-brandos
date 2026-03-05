@@ -3,10 +3,178 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CTA+ — Brand OS (v0.1)</title>
+  <title>CTA+ — Brand OS (Fuente) + Producto (Brand OS + Brand Agent)</title>
+  <style>
+    :root { --bg:#0b0d12; --card:#121625; --text:#e9ecf5; --muted:#aab3c7; --line:#27304a; --accent:#6ee7ff; }
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto; background:var(--bg); color:var(--text);}
+    header{position:sticky;top:0;z-index:10;background:rgba(11,13,18,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+    header .wrap{max-width:1200px;margin:0 auto;padding:14px 18px;display:flex;gap:12px;align-items:center;justify-content:space-between;}
+    .badge{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
+    main{max-width:1200px;margin:0 auto;padding:18px;display:grid;grid-template-columns:320px 1fr;gap:18px}
+    nav{position:sticky;top:64px;align-self:start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+    nav a{display:block;color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:10px}
+    nav a:hover{background:rgba(110,231,255,.08);color:var(--text)}
+    .search{width:100%;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:#0f1320;color:var(--text)}
+    section{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+    h2{margin:0 0 8px 0;font-size:18px}
+    h3{margin:14px 0 8px 0;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .field{padding:12px;border:1px dashed rgba(170,179,199,.35);border-radius:14px;background:rgba(15,19,32,.6)}
+    .k{font-size:12px;color:var(--muted);margin-bottom:6px}
+    .v{white-space:pre-wrap;line-height:1.45}
+    @media (max-width: 980px){ main{grid-template-columns:1fr} nav{position:relative;top:auto} .grid{grid-template-columns:1fr} }
+  </style>
 </head>
-<body>
-  <h1>CTA+ — Brand OS</h1>
-  <p>Prueba inicial: confirmando que el repo recibe archivos. Luego metemos el template completo.</p>
+
+<body data-export-root="brandos">
+<header>
+  <div class="wrap">
+    <div>
+      <div style="font-weight:700">CTA+ — Brand OS + Producto</div>
+      <div class="badge">HTML fuente → export JSON (Brand Agent)</div>
+    </div>
+    <div class="badge">v1.0</div>
+  </div>
+</header>
+
+<main>
+  <nav>
+    <input class="search" placeholder="Buscar (Ctrl/Cmd+F)…" aria-label="Buscar" />
+    <div style="height:10px"></div>
+    <a href="#producto">Producto: Brand OS + Brand Agent</a>
+    <a href="#cta">CTA+ Brand OS (Interno)</a>
+    <a href="#oferta">Oferta & Paquetes</a>
+    <a href="#audiencias">Audiencias / ICP</a>
+    <a href="#mensaje">Mensajería</a>
+    <a href="#voz">Voz & Tono</a>
+    <a href="#contenido">Territorios de contenido</a>
+    <a href="#assets">Assets & Sistema visual</a>
+    <a href="#playbook">Playbook</a>
+    <a href="#qa">QA & Gobernanza</a>
+  </nav>
+
+  <div>
+
+    <section id="producto" data-entity="product_brandos_agent">
+      <h2>Producto: Brand OS + Brand Agent</h2>
+      <div class="grid">
+
+        <div class="field" data-field="tagline">
+          <div class="k">Tagline</div>
+          <div class="v">Un sistema operativo para tu marca. Un asistente estratégico para tu equipo.</div>
+        </div>
+
+        <div class="field" data-field="problem_statement">
+          <div class="k">Problema que resuelve</div>
+          <div class="v">[Pega aquí]</div>
+        </div>
+
+        <div class="field" data-field="what_is_brandos">
+          <div class="k">¿Qué es Brand OS?</div>
+          <div class="v">Sistema estratégico + operativo donde la marca queda estructurada y utilizable.</div>
+        </div>
+
+        <div class="field" data-field="what_is_brandagent">
+          <div class="k">¿Qué es Brand Agent?</div>
+          <div class="v">IA entrenada con el Brand OS para escribir/decidir coherentemente en tiempo real.</div>
+        </div>
+      </div>
+
+      <h3>Incluye (alto nivel)</h3>
+      <div class="field" data-field="includes_list">
+        <div class="k">Lista</div>
+        <div class="v">• Propósito, visión y arquetipo
+• ADN verbal y visual
+• Narrativa, pitch, RTBs
+• Audiencias y sociotipos
+• Territorios de contenido + voz/tono
+• Sistema visual (key visuals, tipografías, paleta)
+• Sistema de productos/servicios
+• Estrategias de campaña + automatización + comunicación interna</div>
+      </div>
+
+      <h3>Entregables</h3>
+      <div class="field" data-field="deliverables">
+        <div class="k">Qué se entrega</div>
+        <div class="v">• Construcción Brand OS (Notion u otro)
+• Entrenamiento Brand Agent
+• Guías de uso y gobernanza
+• Sesión de activación
+• (Opcional) conexión con CRM / web / bots / workflows</div>
+      </div>
+    </section>
+
+    <section id="cta" data-entity="cta_brandos_internal">
+      <h2>CTA+ Brand OS (Interno)</h2>
+      <div class="grid">
+        <div class="field" data-field="brand_purpose"><div class="k">Propósito</div><div class="v">[Pega aquí]</div></div>
+        <div class="field" data-field="brand_archetype"><div class="k">Arquetipo</div><div class="v">[Pega aquí]</div></div>
+        <div class="field" data-field="positioning"><div class="k">Posicionamiento</div><div class="v">[Pega aquí]</div></div>
+        <div class="field" data-field="non_negotiables"><div class="k">No negociables</div><div class="v">[Pega aquí]</div></div>
+      </div>
+    </section>
+
+    <section id="oferta" data-entity="offer">
+      <h2>Oferta & Paquetes</h2>
+      <div class="field" data-field="packages"><div class="k">Paquetes</div><div class="v">[Pega aquí]</div></div>
+    </section>
+
+    <section id="audiencias" data-entity="audiences">
+      <h2>Audiencias / ICP</h2>
+      <div class="field" data-field="icp_primary"><div class="k">ICP Primario</div><div class="v">[Pega aquí]</div></div>
+      <div class="field" data-field="icp_secondary"><div class="k">ICP Secundarios</div><div class="v">[Pega aquí]</div></div>
+    </section>
+
+    <section id="mensaje" data-entity="messaging">
+      <h2>Mensajería</h2>
+      <div class="grid">
+        <div class="field" data-field="one_liner"><div class="k">One-liner</div><div class="v">[Pega aquí]</div></div>
+        <div class="field" data-field="pitch"><div class="k">Pitch base</div><div class="v">[Pega aquí]</div></div>
+      </div>
+      <div class="field" data-field="value_bullets"><div class="k">3 bullets diferenciales</div><div class="v">[Pega aquí]</div></div>
+    </section>
+
+    <section id="voz" data-entity="voice_tone">
+      <h2>Voz & Tono</h2>
+      <div class="grid">
+        <div class="field" data-field="voice_attributes"><div class="k">Atributos de voz</div><div class="v">[Pega aquí]</div></div>
+        <div class="field" data-field="tone_rules"><div class="k">Reglas de tono</div><div class="v">[Pega aquí]</div></div>
+      </div>
+      <div class="field" data-field="dos_donts"><div class="k">Do / Don’t</div><div class="v">[Pega aquí]</div></div>
+    </section>
+
+    <section id="contenido" data-entity="content_system">
+      <h2>Territorios de contenido</h2>
+      <div class="field" data-field="content_pillars"><div class="k">Pilares</div><div class="v">[Pega aquí]</div></div>
+      <div class="field" data-field="channel_examples"><div class="k">Ejemplos por canal</div><div class="v">[Pega aquí]</div></div>
+    </section>
+
+    <section id="assets" data-entity="visual_system">
+      <h2>Assets & Sistema visual</h2>
+      <div class="field" data-field="palette"><div class="k">Paleta</div><div class="v">[Pega aquí]</div></div>
+      <div class="field" data-field="typography"><div class="k">Tipografías</div><div class="v">[Pega aquí]</div></div>
+      <div class="field" data-field="key_visuals"><div class="k">Key visuals</div><div class="v">[Pega aquí]</div></div>
+    </section>
+
+    <section id="playbook" data-entity="playbook">
+      <h2>Playbook</h2>
+      <div class="field" data-field="objections"><div class="k">Objeciones + respuestas</div><div class="v">[Pega aquí]</div></div>
+    </section>
+
+    <section id="qa" data-entity="governance">
+      <h2>QA & Gobernanza</h2>
+      <div class="field" data-field="governance_rules"><div class="k">Reglas</div><div class="v">[Pega aquí]</div></div>
+      <div class="field" data-field="qa_checklist">
+        <div class="k">Checklist QA</div>
+        <div class="v">☐ Toda sección crítica tiene contenido (no placeholders)
+☐ Voz/tono incluye Do/Don’t
+☐ Paquetes tienen alcance + precio + condiciones
+☐ Audiencias definidas (ICP primario + 2 secundarios)
+☐ Export JSON válido (cuando llegue el momento)</div>
+      </div>
+    </section>
+
+  </div>
+</main>
 </body>
 </html>
